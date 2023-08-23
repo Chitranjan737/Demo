@@ -1,0 +1,44 @@
+WelcomeScreen As screen:
+    Fill: =
+
+    Icon1 As icon.Person:
+        Icon: =Icon.Person
+        X: =147
+        Y: =219
+        ZIndex: =1
+
+    Icon3 As icon.Lock:
+        Icon: =Icon.Lock
+        X: =147
+        Y: =320
+        ZIndex: =2
+
+    Label1 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =25
+        Text: |-
+            ="Name : "
+        X: =254
+        Y: =231
+        ZIndex: =3
+
+    Label1_1 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =25
+        Text: ="Role"
+        X: =254
+        Y: =332
+        ZIndex: =4
+
+    Label2 As label:
+        Text: =varUser.DisplayName
+        X: =422
+        Y: =231
+        ZIndex: =5
+
+    Label3 As label:
+        Text: =varRole
+        X: =422
+        Y: =332
+        ZIndex: =6
+

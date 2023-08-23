@@ -1,0 +1,10 @@
+EventScreen As screen:
+
+    Label4 As label:
+        Text: |-
+            ="Event screen
+            "
+        X: =411
+        Y: =270
+        ZIndex: =1
+

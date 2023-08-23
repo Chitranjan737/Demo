@@ -1,0 +1,88 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |+
+        =/*
+        // Obtain username and email of the logged-in user
+        Set(
+            varLoggedInUser,
+            User()
+        );
+        // Find the user with a matching email in the App Users list
+        With(
+            {
+                wUserRecord: LookUp(
+                    'App Users',
+                    User.Email = varLoggedInUser.Email
+                )
+            },
+            Set(
+                varUser,
+                wUserRecord.User
+            );
+            Set(
+                varRole,
+                wUserRecord.Role.Value
+            )
+        );
+        // If matching user is not found, insert a new user into the list with the role Employee
+        If(
+            IsBlank(varRole),
+            With(
+                {
+                    wUserRecord: Patch(
+                        'App Users',
+                        Defaults('App Users'),
+                        {
+                            User: {
+                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+                                Claims: "i:0#.f|membership|" & varLoggedInUser.Email,
+                                Department: "",
+                                DisplayName: varLoggedInUser.FullName,
+                                Email: varLoggedInUser.Email,
+                                JobTitle: "",
+                                Picture: ""
+                            }
+                        }
+                    )
+                },
+                Set(
+                    varUser,
+                    wUserRecord.User
+                );
+                Set(
+                    varRole,
+                    wUserRecord.Role.Value
+                )
+            )
+        );
+        */
+        
+        
+        Set(varLoggedInUser, User());
+        
+        With(
+            {wUserRecord: LookUp('App Users', User.Email="AlexW@5v5bmr.onmicrosoft.com")},
+            Set(varUser, wUserRecord.User);
+            Set(varRole, wUserRecord.Role.Value)
+        );
+        
+    StartScreen: |-
+        =Switch(
+            Param("screenName"),
+            "events",
+            EventScreen,
+            "admin",
+            AdminScreen,
+            "user",
+            UserScreen,
+            WelcomeScreen
+        )
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

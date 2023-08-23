@@ -1,0 +1,8 @@
+AdminScreen As screen:
+
+    Label6 As label:
+        Text: ="Admin Screen "
+        X: =225
+        Y: =249
+        ZIndex: =1
+
