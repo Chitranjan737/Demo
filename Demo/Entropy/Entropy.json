@@ -1,0 +1,92 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "AdminScreen": 11,
+    "App": 1,
+    "EventScreen": 15,
+    "Host": 3,
+    "Icon1": 5,
+    "Icon3": 8,
+    "Label1": 6,
+    "Label1_1": 9,
+    "Label2": 7,
+    "Label3": 10,
+    "Label4": 16,
+    "Label5": 14,
+    "Label6": 12,
+    "UserScreen": 13,
+    "WelcomeScreen": 4
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "08/23/2023 07:00:56",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {
+    "b1b9ccaa-9dd9-4153-94ff-0ed4de1a86f5": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/dd44ec2954bc4b87aa7cfd6d6554e8b5\""
+  },
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "App Users": 0
+  },
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "icon": 0,
+    "label": 1
+  },
+  "OverridablePropertiesEntry": {
+    "AdminScreen": {},
+    "App": {},
+    "EventScreen": {},
+    "Host": {},
+    "Icon1": {},
+    "Icon3": {},
+    "Label1": {},
+    "Label1_1": {},
+    "Label2": {},
+    "Label3": {},
+    "Label4": {},
+    "Label5": {},
+    "Label6": {},
+    "UserScreen": {},
+    "WelcomeScreen": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {},
+  "PCFTemplateEntry": {},
+  "PublishOrderIndices": {
+    "AdminScreen": 0,
+    "App": 0,
+    "EventScreen": 0,
+    "Host": 0,
+    "Icon1": 0,
+    "Icon3": 3,
+    "Label1": 1,
+    "Label1_1": 4,
+    "Label2": 2,
+    "Label3": 5,
+    "Label4": 8,
+    "Label5": 7,
+    "Label6": 6,
+    "UserScreen": 0,
+    "WelcomeScreen": 0
+  },
+  "ResourcesJsonIndices": {},
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1307814,
+    "ControlCount": {
+      "icon": 2,
+      "label": 7,
+      "screen": 4
+    },
+    "DeserializationLoadTime": 3.1327936
+  },
+  "WasLocalDatabaseReferencesEmpty": true
+}

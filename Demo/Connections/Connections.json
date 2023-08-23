@@ -1,0 +1,27 @@
+{
+  "b1b9ccaa-9dd9-4153-94ff-0ed4de1a86f5": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/master/1.0.1653.3400/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://5v5bmr.sharepoint.com/sites/YASHTECH": {
+        "dataSources": {
+          "App Users": {
+            "tableName": "e58105c2-e3ef-47b9-a1ce-d5975918b4fb"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "App Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "b1b9ccaa-9dd9-4153-94ff-0ed4de1a86f5"
+  }
+}
