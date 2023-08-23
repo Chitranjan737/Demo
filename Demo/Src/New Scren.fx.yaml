@@ -1,0 +1,9 @@
+"'New Scren' As screen":
+
+    Label7 As label:
+        Height: =184
+        Text: ="New Screen Added "
+        X: =249
+        Y: =93
+        ZIndex: =1
+

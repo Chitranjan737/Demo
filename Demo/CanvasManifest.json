@@ -132,6 +132,7 @@
     "WelcomeScreen",
     "AdminScreen",
     "UserScreen",
-    "EventScreen"
+    "EventScreen",
+    "New Scren"
   ]
 }
